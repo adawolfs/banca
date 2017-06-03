@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Banca</string>
+    <string name="title_activity_loan_payment">LoanPaymentActivity</string>
+</resources>

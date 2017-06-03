@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.adawolfs.banca.MenuActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etLoan"
+        android:hint="Número de Prestamo"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Seleccione una Opción" />
+
+    <Button
+        android:text="Pago Tarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btCard"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/etLoan"
+        android:layout_alignStart="@+id/etLoan"
+        android:layout_alignEnd="@+id/etLoan" />
+
+    <Button
+        android:text="Pago Prestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btLoan"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/btCard"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@+id/btLogout"
+        android:layout_alignEnd="@+id/btCard" />
+
+    <Button
+        android:text="Pago Servicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btService"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btLoan"
+        android:layout_alignStart="@+id/btCard"
+        android:layout_alignEnd="@+id/btCard" />
+
+    <Button
+        android:text="Cerrar Sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btLogout"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btService"
+        android:layout_alignStart="@+id/btService"
+        android:layout_alignEnd="@+id/btService" />
+
+</RelativeLayout>
